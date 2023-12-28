@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CourseProject';
+  loadedFeature: string = "recipe";
+
+  onNavigation(event){
+    this.loadedFeature = event;
+  }
 }
